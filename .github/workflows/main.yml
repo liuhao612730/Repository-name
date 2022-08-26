@@ -1,36 +1,27 @@
-# This is a basic workflow to help you get started with Actions
+{
+# 公众号配置
+# 公众号appId
+"app_id": "wxa240372f7c249aa6",
+# 公众号appSecret
+"app_secret": "613cc7d4d2e234f4de6d61fb679e5",
+# 模板消息id
+"template_id": "44c9bcQvvfrJYihDkv9DTfrvU6aIbSxo80z_gacn5go",
+# 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如["wx1", "wx2"]
+"user": ["o_57p5zrzQ_rdcAEV81ApGEhJups"],
 
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+# 信息配置
+# 和风天气apikey
+"weather_key": "ea44a73f3ba44f9bb622222e72c70971",
+# 天行数据apikey
+"tian_api": "34601c7d470e54eb14e419f69e422b7e",
+# 所在地区，可为省，城市，区，县，同时支持国外城市，例如伦敦(国外城市可能获取不到pm2.5，空气质量，今日建议等数据)
+"region": "西安",
+# 生日
+"birthday1": {"name": "小蕊", "birthday": "2003-04-29"},
+# 在一起的日子，格式同上
+"love_date": "2022-10-01",
+# 金句中文，如果为空，默认会读取金山的每日金句
+"note_ch": "",
+# 金句英文
+"note_en": ""
+}
